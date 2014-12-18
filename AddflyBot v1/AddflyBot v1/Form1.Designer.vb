@@ -44,10 +44,10 @@ Partial Class Form1
         '
         'WebBrowser1
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(104, 144)
+        Me.WebBrowser1.Location = New System.Drawing.Point(12, 101)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(554, 350)
+        Me.WebBrowser1.Size = New System.Drawing.Size(646, 393)
         Me.WebBrowser1.TabIndex = 1
         '
         'TextBox1
