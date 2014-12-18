@@ -39,6 +39,8 @@ Partial Class Form1
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -143,18 +145,18 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(203, 48)
+        Me.Button4.Location = New System.Drawing.Point(221, 40)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(91, 28)
         Me.Button4.TabIndex = 12
-        Me.Button4.Text = "Button4"
+        Me.Button4.Text = "Start"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(40, 50)
+        Me.TextBox4.Location = New System.Drawing.Point(89, 43)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(145, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(126, 20)
         Me.TextBox4.TabIndex = 13
         '
         'Timer1
@@ -162,10 +164,28 @@ Partial Class Form1
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(132, 75)
+        Me.TextBox5.Location = New System.Drawing.Point(241, 79)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(55, 20)
         Me.TextBox5.TabIndex = 14
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(13, 46)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(73, 13)
+        Me.Label5.TabIndex = 15
+        Me.Label5.Text = "Current Proxy:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(140, 82)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(95, 13)
+        Me.Label6.TabIndex = 16
+        Me.Label6.Text = "Proxy List Number:"
         '
         'Form1
         '
@@ -173,6 +193,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(670, 506)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Button4)
@@ -210,5 +232,7 @@ Partial Class Form1
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 
 End Class
