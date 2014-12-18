@@ -162,6 +162,7 @@ Partial Class Form1
         '
         'Timer1
         '
+        Me.Timer1.Interval = 5000
         '
         'TextBox5
         '
@@ -190,7 +191,7 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(330, 25)
+        Me.Button5.Location = New System.Drawing.Point(-1, 62)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 17
