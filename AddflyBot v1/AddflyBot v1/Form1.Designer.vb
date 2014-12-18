@@ -31,6 +31,7 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -107,12 +108,22 @@ Partial Class Form1
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Port"
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(132, 51)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(104, 44)
+        Me.Button3.TabIndex = 9
+        Me.Button3.Text = "Disable Proxy"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(670, 506)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
@@ -137,5 +148,6 @@ Partial Class Form1
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 
 End Class
