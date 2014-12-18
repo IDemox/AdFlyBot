@@ -16,7 +16,7 @@ Public Class Form1
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim clsProxy As New IEProxy
-        If clsProxy.SetProxy("223.86.216.84:8123") Then
+        If clsProxy.SetProxy(TextBox2.Text + ":" + TextBox3.Text) Then
             MessageBox.Show("Proxy successfully enabled.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
             MessageBox.Show("Error enabling proxy.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)

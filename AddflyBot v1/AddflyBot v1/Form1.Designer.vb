@@ -53,15 +53,15 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(200, 9)
+        Me.TextBox1.Location = New System.Drawing.Point(50, 9)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(386, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(536, 20)
         Me.TextBox1.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(162, 14)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(32, 13)
         Me.Label1.TabIndex = 3
@@ -69,21 +69,21 @@ Partial Class Form1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(354, 51)
+        Me.TextBox2.Location = New System.Drawing.Point(353, 48)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 4
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(354, 78)
+        Me.TextBox3.Location = New System.Drawing.Point(353, 75)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 5
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(461, 51)
+        Me.Button2.Location = New System.Drawing.Point(459, 46)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(89, 46)
         Me.Button2.TabIndex = 6
@@ -93,24 +93,24 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(322, 51)
+        Me.Label2.Location = New System.Drawing.Point(327, 55)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(17, 13)
+        Me.Label2.Size = New System.Drawing.Size(20, 13)
         Me.Label2.TabIndex = 7
-        Me.Label2.Text = "IP"
+        Me.Label2.Text = "IP:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(313, 85)
+        Me.Label3.Location = New System.Drawing.Point(318, 82)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(26, 13)
+        Me.Label3.Size = New System.Drawing.Size(29, 13)
         Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Port"
+        Me.Label3.Text = "Port:"
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(132, 51)
+        Me.Button3.Location = New System.Drawing.Point(554, 48)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(104, 44)
         Me.Button3.TabIndex = 9
