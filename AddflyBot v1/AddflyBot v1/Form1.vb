@@ -11,7 +11,7 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        
+        Timer1.Start()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -32,8 +32,11 @@ Public Class Form1
         End If
     End Sub
 
+
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        TextBox4.Text = RichTextBox1.Lines(1)
+
+        TextBox4.Text = RichTextBox1.Lines(RotateCount)
+
 
     End Sub
 
@@ -41,6 +44,12 @@ Public Class Form1
 
     End Sub
 
-    
+    Public RotateCount = 0
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        RotateCount += 1
+        TextBox5.Text = RotateCount
+
+    End Sub
 End Class
 
