@@ -52,5 +52,9 @@ Public Class Form1
         TextBox4.Text = RichTextBox1.Lines(RotateCount)
 
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Timer1.Stop()
+    End Sub
 End Class
 
