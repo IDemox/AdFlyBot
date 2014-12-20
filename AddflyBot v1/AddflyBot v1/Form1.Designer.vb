@@ -27,7 +27,6 @@ Partial Class Form1
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -55,7 +54,7 @@ Partial Class Form1
         '
         'WebBrowser1
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(353, 101)
+        Me.WebBrowser1.Location = New System.Drawing.Point(355, 101)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.Size = New System.Drawing.Size(644, 588)
@@ -77,22 +76,13 @@ Partial Class Form1
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "URL:"
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(459, 46)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(89, 46)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Apply proxy"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(554, 48)
+        Me.Button3.Location = New System.Drawing.Point(895, 1)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(104, 44)
+        Me.Button3.Size = New System.Drawing.Size(104, 34)
         Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Disable Proxy"
+        Me.Button3.Text = "Emergency Disable Proxy"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'RichTextBox1
@@ -159,36 +149,36 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(378, 58)
+        Me.Button5.Location = New System.Drawing.Point(701, 1)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.Size = New System.Drawing.Size(75, 83)
         Me.Button5.TabIndex = 17
-        Me.Button5.Text = "Stop"
+        Me.Button5.Text = "Timer 1 Stop"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(318, 35)
+        Me.Button6.Location = New System.Drawing.Point(782, -1)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(118, 23)
+        Me.Button6.Size = New System.Drawing.Size(107, 36)
         Me.Button6.TabIndex = 18
-        Me.Button6.Text = "Emergency Click elemwnt"
+        Me.Button6.Text = "Emergency Click element"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(729, 13)
+        Me.Button7.Location = New System.Drawing.Point(782, 35)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(155, 23)
+        Me.Button7.Size = New System.Drawing.Size(107, 49)
         Me.Button7.TabIndex = 19
         Me.Button7.Text = "emergency2nd timer start"
         Me.Button7.UseVisualStyleBackColor = True
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(729, 35)
+        Me.Button8.Location = New System.Drawing.Point(895, 35)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(131, 46)
+        Me.Button8.Size = New System.Drawing.Size(104, 46)
         Me.Button8.TabIndex = 20
         Me.Button8.Text = "emergency 2nd timer stop"
         Me.Button8.UseVisualStyleBackColor = True
@@ -215,7 +205,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.WebBrowser1)
@@ -230,7 +219,6 @@ Partial Class Form1
     Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label

@@ -15,13 +15,8 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim clsProxy As New IEProxy
-        If clsProxy.SetProxy(TextBox4.Text) Then
-            MessageBox.Show("Proxy successfully enabled.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Else
-            MessageBox.Show("Error enabling proxy.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-        End If
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -51,6 +46,12 @@ Public Class Form1
         RotateCount += 1
         TextBox5.Text = RotateCount
         TextBox4.Text = RichTextBox1.Lines(RotateCount)
+        Dim clsProxy As New IEProxy
+        If clsProxy.SetProxy(TextBox4.Text) Then
+            MessageBox.Show("Proxy successfully enabled.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            MessageBox.Show("Error enabling proxy.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        End If
 
     End Sub
 
