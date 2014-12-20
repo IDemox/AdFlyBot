@@ -38,6 +38,7 @@ Partial Class Form1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -54,7 +55,7 @@ Partial Class Form1
         Me.WebBrowser1.Location = New System.Drawing.Point(353, 101)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(305, 393)
+        Me.WebBrowser1.Size = New System.Drawing.Size(644, 588)
         Me.WebBrowser1.TabIndex = 1
         '
         'TextBox1
@@ -95,7 +96,7 @@ Partial Class Form1
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(15, 101)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(334, 393)
+        Me.RichTextBox1.Size = New System.Drawing.Size(334, 588)
         Me.RichTextBox1.TabIndex = 10
         Me.RichTextBox1.Text = ""
         '
@@ -162,12 +163,22 @@ Partial Class Form1
         Me.Button5.Text = "Stop"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(318, 35)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(118, 23)
+        Me.Button6.TabIndex = 18
+        Me.Button6.Text = "Click elemwnt"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(670, 506)
+        Me.ClientSize = New System.Drawing.Size(1009, 760)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -203,5 +214,6 @@ Partial Class Form1
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
 
 End Class
