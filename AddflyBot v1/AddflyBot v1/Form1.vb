@@ -12,6 +12,7 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         WebBrowser1.ScriptErrorsSuppressed = True
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -62,12 +63,30 @@ Public Class Form1
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Timer2.Start()
+        
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
+        System.Threading.Thread.Sleep(5000)
+    End Sub
+
+    Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
+        Timer2.Start()
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Timer2.Stop()
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         Dim allelement As HtmlElementCollection = WebBrowser1.Document.All
         For Each webpageelement As HtmlElement In allelement
             If webpageelement.GetAttribute("id") = "skip_ad_button" Then
                 webpageelement.InvokeMember("click")
             End If
         Next
+
     End Sub
 End Class
 

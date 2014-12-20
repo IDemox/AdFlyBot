@@ -39,6 +39,9 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Button1
@@ -94,9 +97,9 @@ Partial Class Form1
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(15, 101)
+        Me.RichTextBox1.Location = New System.Drawing.Point(12, 101)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(334, 588)
+        Me.RichTextBox1.Size = New System.Drawing.Size(337, 588)
         Me.RichTextBox1.TabIndex = 10
         Me.RichTextBox1.Text = ""
         '
@@ -169,15 +172,39 @@ Partial Class Form1
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(118, 23)
         Me.Button6.TabIndex = 18
-        Me.Button6.Text = "Click elemwnt"
+        Me.Button6.Text = "Emergency Click elemwnt"
         Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(729, 13)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(155, 23)
+        Me.Button7.TabIndex = 19
+        Me.Button7.Text = "emergency2nd timer start"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(729, 35)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(131, 46)
+        Me.Button8.TabIndex = 20
+        Me.Button8.Text = "emergency 2nd timer stop"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Timer2
+        '
+        Me.Timer2.Interval = 250
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(1009, 760)
+        Me.ClientSize = New System.Drawing.Size(1009, 700)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label6)
@@ -215,5 +242,8 @@ Partial Class Form1
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Timer2 As System.Windows.Forms.Timer
 
 End Class
