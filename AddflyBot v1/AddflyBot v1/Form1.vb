@@ -2,12 +2,19 @@
 Imports System.Net
 
 Public Class Form1
+    Dim url As String
+    Dim load As Integer
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        WebBrowser1.Navigate(TextBox1.Text)
+        url = TextBox1.Text
+
+        MessageBox.Show("Nav var set!")
+
+
+
     End Sub
 
     Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
-        
+
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -52,6 +59,14 @@ Public Class Form1
         Else
             MessageBox.Show("Error enabling proxy.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
+        WebBrowser1.Navigate(url)
+        If WebBrowser1.IsBusy = True Then
+            'do nothing
+        Else
+            Timer2.Start()
+        End If
+        
+
 
     End Sub
 
@@ -65,7 +80,7 @@ Public Class Form1
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Timer2.Start()
-        
+
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs)
@@ -89,5 +104,14 @@ Public Class Form1
         Next
 
     End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        TextBox2.Text = url
+    End Sub
+
+    
+
+    
+    
 End Class
 
