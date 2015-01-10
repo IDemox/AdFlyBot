@@ -41,6 +41,7 @@ Public Class Form1
 
 
 
+
     End Sub
 
     Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
@@ -60,11 +61,7 @@ Public Class Form1
             MessageBox.Show("Error enabling proxy.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
         WebBrowser1.Navigate(url)
-        If WebBrowser1.IsBusy = True Then
-            'do nothing
-        Else
-            Timer2.Start()
-        End If
+       
         
 
 
@@ -113,5 +110,9 @@ Public Class Form1
 
     
     
+ 
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        WebBrowser1.Navigate(url)
+    End Sub
 End Class
 

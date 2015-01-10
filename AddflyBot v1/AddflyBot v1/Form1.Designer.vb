@@ -44,6 +44,7 @@ Partial Class Form1
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -123,7 +124,7 @@ Partial Class Form1
         '
         'Timer1
         '
-        Me.Timer1.Interval = 30000
+        Me.Timer1.Interval = 20000
         '
         'TextBox5
         '
@@ -208,10 +209,19 @@ Partial Class Form1
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(328, 75)
+        Me.TextBox3.Location = New System.Drawing.Point(313, 64)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 23
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(328, 31)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(147, 23)
+        Me.Button9.TabIndex = 24
+        Me.Button9.Text = "Emergentcy navigate"
+        Me.Button9.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -219,6 +229,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(1009, 700)
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox2)
@@ -265,5 +276,6 @@ Partial Class Form1
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents Button9 As System.Windows.Forms.Button
 
 End Class
